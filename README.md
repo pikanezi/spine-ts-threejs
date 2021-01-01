@@ -1,3 +1,5 @@
+# This readme has copied/pasted from the [Spine runtime repository](https://github.com/EsotericSoftware/spine-runtimes/tree/3.8/spine-ts).
+
 # spine-ts
 
 The spine-ts runtime provides functionality to load and manipulate [Spine](http://esotericsoftware.com) skeletal animation data using TypeScript and JavaScript. spine-ts is split
