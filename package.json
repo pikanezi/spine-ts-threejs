@@ -3,7 +3,7 @@
     "version": "1.0.1",
     "description": "Implementation of spine runtime in typescript for Threejs.",
     "main": "dist/index.js",
-    "types": "dist/index.ts",
+    "types": "dist/index.d.ts",
     "scripts": {
         "start": "cd example && react-scripts start",
         "build": "tsc -p tsconfig.json"
