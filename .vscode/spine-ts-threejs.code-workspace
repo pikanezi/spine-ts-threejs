@@ -1,0 +1,40 @@
+{
+    "folders": [
+        {
+            "path": "../"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "public": false,
+            "node_modules": true,
+            "src/**/*.test.ts": false,
+            "src/**/*.test.tsx": false,
+            "example/node_modules": true,
+        },
+        // Editor
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        // Eslint
+        "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+        "eslint.workingDirectories": ["src"],
+        // Git lens
+        "gitlens.codeLens.enabled": false,
+        // Javascript
+        "javascript.suggestionActions.enabled": false,
+        // Typescript
+        "typescript.tsdk": "node_modules/typescript/lib",
+        // Revert old folding strategy to be able to fold styled components
+        "[typescript]": {
+            "editor.foldingStrategy": "indentation"
+        },
+        "[typescriptreact]": {
+            "editor.foldingStrategy": "indentation"
+        }
+    }
+}
