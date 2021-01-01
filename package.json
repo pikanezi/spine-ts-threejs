@@ -1,6 +1,6 @@
 {
     "name": "spine-ts-threejs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Implementation of spine runtime in typescript for Threejs.",
     "main": "dist/index.js",
     "types": "dist/index.ts",
