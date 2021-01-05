@@ -33,9 +33,7 @@ import {AssetManager as BaseAssetManager} from '../AssetManager';
 export class AssetManager extends BaseAssetManager {
     constructor(pathPrefix: string = '') {
         super((image: HTMLImageElement) => {
-            const texture = new ThreeJsTexture(image);
-            texture.needsUpdate = true;
-            return texture;
+            return new ThreeJsTexture(image);
         }, pathPrefix);
     }
 }
