@@ -27,7 +27,7 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-import {TextureFilter, TextureWrap} from '../Texture';
+import {Texture as AbstractTexture, TextureFilter, TextureWrap} from '../Texture';
 import {
     Texture,
     LinearFilter,
@@ -41,7 +41,7 @@ import {
     NearestMipMapNearestFilter,
 } from 'three';
 
-export class ThreeJsTexture extends Texture {
+export class ThreeJsTexture extends AbstractTexture {
     texture: THREE.Texture;
 
     constructor(image: HTMLImageElement) {
