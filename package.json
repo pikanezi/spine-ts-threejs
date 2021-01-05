@@ -6,7 +6,8 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "start": "cd example && react-scripts start",
-        "build": "tsc -p tsconfig.json"
+        "build": "tsc -p tsconfig.json",
+        "publish": "yarn build && npm publish"
     },
     "repository": {
         "type": "git",
