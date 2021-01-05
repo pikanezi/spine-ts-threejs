@@ -27,13 +27,13 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-import {Texture} from 'three';
+import {ThreeJsTexture} from './ThreeJsTexture';
 import {AssetManager as BaseAssetManager} from '../AssetManager';
 
 export class AssetManager extends BaseAssetManager {
     constructor(pathPrefix: string = '') {
         super((image: HTMLImageElement) => {
-            const texture = new Texture(image);
+            const texture = new ThreeJsTexture(image);
             texture.needsUpdate = true;
             return texture;
         }, pathPrefix);
